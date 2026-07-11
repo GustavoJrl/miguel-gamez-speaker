@@ -1,3 +1,19 @@
+import type { Metadata } from "next";
+import { Manrope, Playfair_Display } from "next/font/google";
+import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://miguel-gamez-speaker.vercel.app"),
 
@@ -11,16 +27,16 @@ export const metadata: Metadata = {
 
   keywords: [
     "Miguel Gámez",
-    "Conferencista",
-    "Conferencista de ventas",
-    "Speaker de ventas",
-    "Ventas",
-    "Negociación",
-    "Liderazgo",
-    "Estrategia comercial",
-    "Capacitación empresarial",
-    "Conferencias empresariales",
-    "Workshops",
+    "conferencista",
+    "conferencista de ventas",
+    "speaker de ventas",
+    "ventas",
+    "negociación",
+    "liderazgo",
+    "estrategia comercial",
+    "capacitación empresarial",
+    "conferencias empresariales",
+    "workshops",
     "El Reloj de Arena",
     "Selling Methodologies",
     "Instituto de Ventas",
@@ -34,7 +50,6 @@ export const metadata: Metadata = {
   ],
 
   creator: "Miguel Gámez",
-
   publisher: "Selling Methodologies",
 
   alternates: {
@@ -48,18 +63,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Miguel Gámez | Conferencista Internacional en Ventas",
-
     description:
       "Conferencias, workshops y experiencias para transformar equipos comerciales mediante metodología, estrategia y ejecución.",
-
     url: "https://miguel-gamez-speaker.vercel.app",
-
     siteName: "Miguel Gámez",
-
     locale: "es_MX",
-
     type: "website",
-
     images: [
       {
         url: "/images/hero.jpg",
@@ -72,12 +81,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Miguel Gámez | Conferencista Internacional en Ventas",
-
     description:
       "Conferencias y workshops para potenciar equipos comerciales.",
-
     images: ["/images/hero.jpg"],
   },
 
@@ -87,3 +93,18 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="es"
+      className={`${manrope.variable} ${playfair.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  );
+}
