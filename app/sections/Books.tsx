@@ -86,7 +86,7 @@ export default function Books() {
 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
   <a
-    href="https://www.amazon.com"
+    href="https://www.amazon.com.mx/stores/author/B0CJFZZTSN"
     target="_blank"
     rel="noopener noreferrer"
     className="rounded-full bg-[#071B2F] px-8 py-4 text-center font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#0B2A47] hover:shadow-xl"
