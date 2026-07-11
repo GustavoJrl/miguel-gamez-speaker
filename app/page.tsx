@@ -2,6 +2,7 @@ import CustomCursor from "./components/CustomCursor";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Reveal from "./components/Reveal";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import WhyMiguel from "./sections/WhyMiguel";
@@ -22,6 +23,7 @@ export default function Home() {
       <Loader />
       <CustomCursor />
       <Navbar />
+      <WhatsAppButton />
 
       <main>
         <Hero />
