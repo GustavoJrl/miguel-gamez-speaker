@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://miguel-gamez-speaker.vercel.app"),
   title: "Miguel Gámez | Conferencista en Ventas y Estrategia Comercial",
   description:
     "Miguel Gámez es conferencista internacional, autor y estratega comercial especializado en ventas, negociación, liderazgo y desarrollo de equipos.",
