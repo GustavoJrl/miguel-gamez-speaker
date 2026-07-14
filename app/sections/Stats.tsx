@@ -1,29 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-const estadisticas = [
-  {
-    valor: 5000,
-    prefijo: "+",
-    descripcion: "Profesionales capacitados",
-  },
-  {
-    valor: 300,
-    prefijo: "+",
-    descripcion: "Conferencias y workshops",
-  },
-  {
-    valor: 10,
-    prefijo: "+",
-    descripcion: "Años desarrollando vendedores",
-  },
-  {
-    valor: 2,
-    prefijo: "",
-    descripcion: "Libros publicados",
-  },
-];
+import { estadisticas } from "../data/stats";
 
 function AnimatedNumber({
   valor,
@@ -41,21 +19,23 @@ function AnimatedNumber({
 
     const duracion = 1800;
     const inicio = performance.now();
+    let animationFrame: number;
 
     const animar = (tiempoActual: number) => {
       const progreso = Math.min((tiempoActual - inicio) / duracion, 1);
-
       const progresoSuave = 1 - Math.pow(1 - progreso, 3);
       const valorActual = Math.floor(progresoSuave * valor);
 
       setNumero(valorActual);
 
       if (progreso < 1) {
-        requestAnimationFrame(animar);
+        animationFrame = requestAnimationFrame(animar);
       }
     };
 
-    requestAnimationFrame(animar);
+    animationFrame = requestAnimationFrame(animar);
+
+    return () => cancelAnimationFrame(animationFrame);
   }, [iniciar, valor]);
 
   return (
@@ -83,7 +63,7 @@ export default function Stats() {
         }
       },
       {
-        threshold: 0.3,
+        threshold: 0.25,
       }
     );
 
@@ -110,20 +90,20 @@ export default function Stats() {
           </h2>
         </div>
 
-        <div className="mt-16 grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 sm:grid-cols-2 lg:grid-cols-5">
           {estadisticas.map((estadistica, index) => (
             <div
               key={estadistica.descripcion}
-              className={`group relative p-8 text-center sm:p-10 ${
+              className={`group relative p-8 text-center lg:p-7 ${
                 index !== estadisticas.length - 1
-                  ? "border-b border-white/10 sm:border-b-0 sm:border-r"
+                  ? "border-b border-white/10 sm:border-r lg:border-b-0"
                   : ""
               }`}
             >
               <div className="absolute inset-0 bg-[#C8A96A]/0 transition duration-500 group-hover:bg-[#C8A96A]/10" />
 
               <div className="relative">
-                <p className="text-5xl font-bold text-[#C8A96A] sm:text-6xl">
+                <p className="text-4xl font-bold text-[#C8A96A] xl:text-5xl">
                   <AnimatedNumber
                     valor={estadistica.valor}
                     prefijo={estadistica.prefijo}
@@ -131,7 +111,7 @@ export default function Stats() {
                   />
                 </p>
 
-                <p className="mx-auto mt-5 max-w-[12rem] text-base leading-7 text-white/65">
+                <p className="mx-auto mt-5 max-w-[11rem] text-sm leading-6 text-white/65 xl:text-base">
                   {estadistica.descripcion}
                 </p>
               </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { estadisticasHero } from "../data/stats";
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);
@@ -47,6 +48,7 @@ export default function Hero() {
 
           <h1 className="mt-8 max-w-4xl text-5xl font-bold leading-[0.98] sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
             Las ventas no son suerte.
+
             <span className="mt-3 block text-[#C8A96A]">
               Son método, estrategia y ejecución.
             </span>
@@ -78,36 +80,19 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-8 border-t border-white/10 pt-8 sm:grid-cols-3">
-            <div>
-              <p className="text-3xl font-bold text-[#C8A96A] sm:text-4xl">
-                +5,000
-              </p>
+          <div className="mt-14 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-8 border-t border-white/10 pt-8 sm:grid-cols-4">
+            {estadisticasHero.map((estadistica) => (
+              <div key={estadistica.descripcion}>
+                <p className="text-3xl font-bold text-[#C8A96A] xl:text-4xl">
+                  {estadistica.prefijo}
+                  {estadistica.valor.toLocaleString("es-MX")}
+                </p>
 
-              <p className="mt-2 text-sm leading-6 text-white/55">
-                Profesionales capacitados
-              </p>
-            </div>
-
-            <div>
-              <p className="text-3xl font-bold text-[#C8A96A] sm:text-4xl">
-                +300
-              </p>
-
-              <p className="mt-2 text-sm leading-6 text-white/55">
-                Conferencias y workshops
-              </p>
-            </div>
-
-            <div>
-              <p className="text-3xl font-bold text-[#C8A96A] sm:text-4xl">
-                +10
-              </p>
-
-              <p className="mt-2 text-sm leading-6 text-white/55">
-                Años desarrollando vendedores
-              </p>
-            </div>
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  {estadistica.descripcion}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -175,7 +160,7 @@ export default function Hero() {
             </p>
 
             <p className="mt-1 text-sm text-white/65">
-              México · Colombia · España
+              Presencial · Virtual · Híbrido
             </p>
           </div>
         </div>
