@@ -20,7 +20,7 @@ const imagenes = [
     clase: "",
   },
   {
-    src: "/images/conferencia4.JPG",
+    src: "/images/conferencia9.JPG",
     alt: "Miguel Gámez frente a una audiencia",
     clase: "md:row-span-2",
   },
@@ -35,7 +35,7 @@ const imagenes = [
     clase: "",
   },
   {
-    src: "/images/conferencia7.JPG",
+    src: "/images/conferencia10.JPG",
     alt: "Miguel Gámez durante una conferencia de ventas",
     clase: "md:col-span-2",
   },

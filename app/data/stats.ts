@@ -1,11 +1,13 @@
 export const estadisticas = [
   {
-    valor: 100000, // Coloca aquí la cifra correcta
-    prefijo: "+",
-    descripcion: "Profesionales capacitados",
-  },
+  valor: 100,
+  prefijo: "+",
+  sufijo: "K",
+  descripcion: "Profesionales capacitados",
+},
   {
     valor: 300, // Coloca aquí la cifra correcta
+    prefijo: "+",
     descripcion: "Conferencias y workshops",
   },
   {

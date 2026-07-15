@@ -3,7 +3,7 @@ import Image from "next/image";
 const trayectoria = [
   "Licenciado en Administración de Empresas con especialidad en Finanzas por el ITESM.",
   "MBA con especialidad en Mercadotecnia y Diplomado D1 por el IPADE.",
-  "Autor de El Diagrama del Vendedor y Estrategia Comercial.",
+  "Autor de dos libros: El Diagrama del Vendedor y Estrategia Comercial.",
   "Creador de la metodología de ventas El Reloj de Arena.",
 ];
 

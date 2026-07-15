@@ -88,7 +88,8 @@ export default function Hero() {
     >
       <p className="whitespace-nowrap text-2xl font-bold leading-none text-[#C8A96A] sm:text-3xl">
         {estadistica.prefijo}
-        {estadistica.valor.toLocaleString("es-MX")}
+{estadistica.valor.toLocaleString("es-MX")}
+{estadistica.sufijo}
       </p>
 
       <p className="mt-3 text-sm leading-6 text-white/60">

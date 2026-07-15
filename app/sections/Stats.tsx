@@ -6,10 +6,12 @@ import { estadisticas } from "../data/stats";
 function AnimatedNumber({
   valor,
   prefijo,
+  sufijo = "",
   iniciar,
 }: {
   valor: number;
   prefijo: string;
+  sufijo?: string;
   iniciar: boolean;
 }) {
   const [numero, setNumero] = useState(0);
@@ -39,11 +41,12 @@ function AnimatedNumber({
   }, [iniciar, valor]);
 
   return (
-    <span>
-      {prefijo}
-      {numero.toLocaleString("es-MX")}
-    </span>
-  );
+  <span>
+    {prefijo}
+    {numero.toLocaleString("es-MX")}
+    {sufijo}
+  </span>
+);
 }
 
 export default function Stats() {
@@ -107,6 +110,7 @@ export default function Stats() {
                   <AnimatedNumber
   valor={estadistica.valor}
   prefijo={estadistica.prefijo ?? ""}
+  sufijo={estadistica.sufijo ?? ""}
   iniciar={iniciarAnimacion}
 />
                 </p>
