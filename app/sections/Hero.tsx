@@ -80,20 +80,23 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-8 border-t border-white/10 pt-8 sm:grid-cols-4">
-            {estadisticasHero.map((estadistica) => (
-              <div key={estadistica.descripcion}>
-                <p className="text-3xl font-bold text-[#C8A96A] xl:text-4xl">
-                  {estadistica.prefijo}
-                  {estadistica.valor.toLocaleString("es-MX")}
-                </p>
+          <div className="mt-14 grid max-w-2xl grid-cols-2 gap-4 border-t border-white/10 pt-8">
+  {estadisticasHero.map((estadistica) => (
+    <div
+      key={estadistica.descripcion}
+      className="min-w-0 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm sm:p-6"
+    >
+      <p className="whitespace-nowrap text-2xl font-bold leading-none text-[#C8A96A] sm:text-3xl">
+        {estadistica.prefijo}
+        {estadistica.valor.toLocaleString("es-MX")}
+      </p>
 
-                <p className="mt-2 text-sm leading-6 text-white/55">
-                  {estadistica.descripcion}
-                </p>
-              </div>
-            ))}
-          </div>
+      <p className="mt-3 text-sm leading-6 text-white/60">
+        {estadistica.descripcion}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
 
         <div
@@ -149,7 +152,7 @@ export default function Hero() {
               </p>
 
               <p className="mt-2 text-lg font-bold text-white">
-                Ventas y estrategia
+                Ventas y Estrategia
               </p>
             </div>
           </div>

@@ -105,10 +105,10 @@ export default function Stats() {
               <div className="relative">
                 <p className="text-4xl font-bold text-[#C8A96A] xl:text-5xl">
                   <AnimatedNumber
-                    valor={estadistica.valor}
-                    prefijo={estadistica.prefijo}
-                    iniciar={iniciarAnimacion}
-                  />
+  valor={estadistica.valor}
+  prefijo={estadistica.prefijo ?? ""}
+  iniciar={iniciarAnimacion}
+/>
                 </p>
 
                 <p className="mx-auto mt-5 max-w-[11rem] text-sm leading-6 text-white/65 xl:text-base">

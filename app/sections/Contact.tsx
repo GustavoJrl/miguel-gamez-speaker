@@ -17,14 +17,9 @@ export default function Contact() {
     const cargo = String(datos.get("cargo") || "").trim();
     const correo = String(datos.get("correo") || "").trim();
     const telefono = String(datos.get("telefono") || "").trim();
-    const ubicacion = String(datos.get("ubicacion") || "").trim();
-    const fecha = String(datos.get("fecha") || "").trim();
-    const asistentes = String(datos.get("asistentes") || "").trim();
-    const tipoEvento = String(datos.get("tipoEvento") || "").trim();
-    const tema = String(datos.get("tema") || "").trim();
     const mensaje = String(datos.get("mensaje") || "").trim();
 
-    if (!nombre || !correo || !telefono || !tipoEvento || !mensaje) {
+    if (!nombre || !correo || !telefono || !mensaje) {
       setError("Completa los campos obligatorios antes de continuar.");
       return;
     }
@@ -37,22 +32,17 @@ export default function Contact() {
     }
 
     const textoWhatsApp = [
-      "Hola, me gustaría solicitar información para contratar una conferencia de Miguel Gámez.",
-      "",
-      `Nombre: ${nombre}`,
-      `Empresa: ${empresa || "No especificada"}`,
-      `Cargo: ${cargo || "No especificado"}`,
-      `Correo: ${correo}`,
-      `Teléfono: ${telefono}`,
-      `Ciudad / País: ${ubicacion || "No especificada"}`,
-      `Fecha tentativa: ${fecha || "Por definir"}`,
-      `Número de asistentes: ${asistentes || "No especificado"}`,
-      `Tipo de evento: ${tipoEvento}`,
-      `Tema de interés: ${tema || "Por definir"}`,
-      "",
-      "Mensaje:",
-      mensaje,
-    ].join("\n");
+  "Hola, me gustaría solicitar información para contratar una conferencia de Miguel Gámez.",
+  "",
+  `Nombre: ${nombre}`,
+  `Empresa: ${empresa || "No especificada"}`,
+  `Cargo: ${cargo || "No especificado"}`,
+  `Correo: ${correo}`,
+  `WhatsApp: ${telefono}`,
+  "",
+  "Mensaje:",
+  mensaje,
+].join("\n");
 
     const enlace = `https://wa.me/529992430579?text=${encodeURIComponent(
       textoWhatsApp
@@ -198,75 +188,6 @@ export default function Contact() {
               />
             </label>
 
-            <label>
-              <span className="font-semibold">Ciudad / País</span>
-              <input
-                name="ubicacion"
-                type="text"
-                placeholder="Mérida, México"
-                className={campo}
-              />
-            </label>
-
-            <label>
-              <span className="font-semibold">Fecha tentativa</span>
-              <input name="fecha" type="date" className={campo} />
-            </label>
-
-            <label>
-              <span className="font-semibold">Número de asistentes</span>
-              <input
-                name="asistentes"
-                type="number"
-                min="1"
-                placeholder="Ej. 150"
-                className={campo}
-              />
-            </label>
-
-            <label>
-              <span className="font-semibold">Tipo de evento *</span>
-              <select name="tipoEvento" required className={campo}>
-                <option value="">Selecciona una opción</option>
-                <option value="Conferencia">Conferencia</option>
-                <option value="Workshop">Workshop</option>
-                <option value="Capacitación empresarial">
-                  Capacitación empresarial
-                </option>
-                <option value="Evento universitario">
-                  Evento universitario
-                </option>
-                <option value="Congreso o convención">
-                  Congreso o convención
-                </option>
-                <option value="Otro">Otro</option>
-              </select>
-            </label>
-
-            <label>
-              <span className="font-semibold">Tema de interés</span>
-              <select name="tema" className={campo}>
-                <option value="">Por definir</option>
-                <option value="Estrategia Comercial">
-                  Estrategia Comercial
-                </option>
-                <option value="Negociación de Alto Impacto">
-                  Negociación de Alto Impacto
-                </option>
-                <option value="Liderazgo Comercial">
-                  Liderazgo Comercial
-                </option>
-                <option value="Metodología de Ventas">
-                  Metodología de Ventas
-                </option>
-                <option value="29 Formas de Prospectar">
-                  29 Formas de Prospectar
-                </option>
-                <option value="Desarrollo Empresarial">
-                  Desarrollo Empresarial
-                </option>
-              </select>
-            </label>
           </div>
 
           <label className="mt-6 block">

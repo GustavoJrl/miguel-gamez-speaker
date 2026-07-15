@@ -10,7 +10,7 @@ const imagenes = [
     clase: "md:col-span-2 md:row-span-2",
   },
   {
-    src: "/images/conferencia2.JPG",
+    src: "/images/conferencia8.JPG",
     alt: "Miguel Gámez en una conferencia empresarial",
     clase: "",
   },
