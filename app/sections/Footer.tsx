@@ -79,20 +79,10 @@ export default function Footer() {
                 <p className="text-sm text-white/40">WhatsApp</p>
 
                 <p className="mt-1 font-semibold text-white/75 transition group-hover:text-[#C8A96A]">
-                  +52 999 243 0579
+                  +52 999 442 8950
                 </p>
               </a>
 
-              <a
-                href="mailto:rh@sellingmethodologies.com"
-                className="group"
-              >
-                <p className="text-sm text-white/40">Coordinación</p>
-
-                <p className="mt-1 break-all font-semibold text-white/75 transition group-hover:text-[#C8A96A]">
-                  rh@sellingmethodologies.com
-                </p>
-              </a>
 
               <a
                 href="mailto:miguel.gamez@sellingmethodologies.com"
@@ -135,7 +125,7 @@ export default function Footer() {
           </p>
 
           <p>
-            Mérida, Yucatán, México
+            México
           </p>
         </div>
       </div>

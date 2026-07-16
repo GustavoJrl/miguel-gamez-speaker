@@ -84,8 +84,8 @@ export default function Methodology() {
               <div className="mx-auto flex max-w-sm flex-col items-center">
                 <div className="h-5 w-52 rounded-t-full bg-[#C8A96A]" />
 
-                <div className="relative mt-2 flex h-48 w-56 items-center justify-center overflow-hidden border-x-[18px] border-[#283A57]">
-                  <div className="absolute top-0 h-0 w-0 border-l-[82px] border-r-[82px] border-t-[90px] border-l-transparent border-r-transparent border-t-[#C8A96A]/85" />
+                <div className="relative mt-2 flex h-28 w-56 items-center justify-center overflow-hidden border-x-[18px] border-[#283A57] sm:h-40">
+                  <div className="absolute top-0 h-0 w-0 border-l-[82px] border-r-[82px] border-t-[65px] border-l-transparent border-r-transparent border-t-[#C8A96A]/85" />
 
                   <div className="relative z-10 rounded-full bg-[#071B2F] px-5 py-3 text-center shadow-xl">
                     <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#C8A96A]">
@@ -98,10 +98,10 @@ export default function Methodology() {
                   </div>
                 </div>
 
-                <div className="relative flex h-48 w-56 items-center justify-center overflow-hidden border-x-[18px] border-[#283A57]">
-                  <div className="absolute bottom-0 h-0 w-0 border-b-[90px] border-l-[82px] border-r-[82px] border-b-[#C8A96A]/85 border-l-transparent border-r-transparent" />
+                <div className="relative flex h-32 w-56 items-center justify-center overflow-hidden border-x-[18px] border-[#283A57] sm:h-44">
+                  <div className="absolute bottom-0 h-0 w-0 border-b-[65px] border-l-[82px] border-r-[82px] border-b-[#C8A96A]/85 border-l-transparent border-r-transparent" />
 
-                  <div className="relative z-10 space-y-2 text-center text-sm font-semibold text-white">
+                  <div className="relative z-10 space-y-1.5 text-center text-sm font-semibold text-white">
                     <p className="rounded-full bg-[#071B2F] px-4 py-2">
                       Influenciadores
                     </p>

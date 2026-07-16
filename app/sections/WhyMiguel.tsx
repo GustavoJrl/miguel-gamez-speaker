@@ -55,7 +55,7 @@ export default function WhyMiguel() {
             </p>
 
             <p className="mt-5 font-bold text-[#071B2F]">
-              CONTACTAME!
+              CONTÁCTAME!
             </p>
           </div>
         </div>
