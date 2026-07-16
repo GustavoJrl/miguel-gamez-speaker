@@ -2,7 +2,7 @@ export default function WhatsAppButton() {
   const mensaje =
     "Hola, me gustaría recibir información sobre las conferencias de Miguel Gámez.";
 
-  const enlace = `https://wa.me/529992430579?text=${encodeURIComponent(
+  const enlace = `https://wa.me/529994428950?text=${encodeURIComponent(
     mensaje
   )}`;
 

@@ -71,7 +71,7 @@ export default function Footer() {
 
             <div className="mt-6 grid gap-5">
               <a
-                href="https://wa.me/529992430579?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20las%20conferencias%20de%20Miguel%20Gámez."
+                href="https://wa.me/529994428950?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20las%20conferencias%20de%20Miguel%20Gámez."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

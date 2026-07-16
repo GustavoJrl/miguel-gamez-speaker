@@ -44,7 +44,7 @@ export default function Contact() {
   mensaje,
 ].join("\n");
 
-    const enlace = `https://wa.me/529992430579?text=${encodeURIComponent(
+    const enlace = `https://wa.me/529994428950?text=${encodeURIComponent(
       textoWhatsApp
     )}`;
 
@@ -105,7 +105,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="https://wa.me/529992430579?text=Hola,%20me%20interesa%20contratar%20una%20conferencia%20de%20Miguel%20Gámez."
+              href="https://wa.me/529994428950?text=Hola,%20me%20interesa%20contratar%20una%20conferencia%20de%20Miguel%20Gámez."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex rounded-full bg-[#C8A96A] px-7 py-4 font-bold text-[#071B2F] transition hover:-translate-y-1 hover:bg-white"
