@@ -14,6 +14,7 @@ import VideoSection from "./sections/VideoSection";
 import Testimonials from "./sections/Testimonials";
 import Gallery from "./sections/Gallery";
 import Books from "./sections/Books";
+import Podcast from "./sections/Podcast";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
@@ -67,6 +68,10 @@ export default function Home() {
         <Reveal>
           <Books />
         </Reveal>
+
+<Reveal>
+  <Podcast />
+</Reveal>
 
         <Reveal>
           <Contact />
