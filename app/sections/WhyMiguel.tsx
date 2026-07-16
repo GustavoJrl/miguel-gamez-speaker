@@ -51,7 +51,11 @@ export default function WhyMiguel() {
             </p>
 
             <p className="mx-auto mt-4 inline-block bg-[#071B2F] px-5 py-3 font-bold uppercase tracking-[0.04em] text-white">
-              realmente cierren ventas.
+              realmente cierren ventas
+            </p>
+
+            <p className="mt-5 font-bold text-[#071B2F]">
+              CONTACTAME!
             </p>
           </div>
         </div>
