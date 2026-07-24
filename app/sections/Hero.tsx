@@ -111,7 +111,7 @@ export default function Hero() {
 
           <div className="relative min-h-[34rem] overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#0B223A] shadow-[0_35px_100px_rgba(0,0,0,0.45)] sm:min-h-[42rem]">
             <Image
-              src="/images/hero.jpg"
+              src="/images/hero2.jpg"
               alt="Miguel Gámez impartiendo una presentación empresarial"
               fill
               priority
