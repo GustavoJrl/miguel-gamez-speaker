@@ -21,7 +21,7 @@ export default function About() {
 
           <div className="relative overflow-hidden rounded-[32px] shadow-2xl">
             <Image
-              src="/images/miguel2.jpg"
+              src="/images/miguel2.JGP"
               alt="Miguel Gámez, conferencista y estratega comercial"
               width={700}
               height={850}
