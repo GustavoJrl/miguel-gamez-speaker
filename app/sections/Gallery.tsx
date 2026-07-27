@@ -171,8 +171,7 @@ export default function Gallery() {
               </p>
 
               <h3 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">
-                Una conferencia puede inspirar. Una metodología puede cambiar
-                la forma de trabajar.
+                Formador y mentor de ventas
               </h3>
             </div>
 

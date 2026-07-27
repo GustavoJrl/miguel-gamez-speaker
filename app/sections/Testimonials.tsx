@@ -76,8 +76,7 @@ export default function Testimonials() {
           </p>
 
           <h3 className="mx-auto mt-5 max-w-4xl text-3xl font-bold leading-tight sm:text-4xl">
-            Una metodología práctica puede cambiar la forma en que una persona
-            vende, negocia y construye relaciones comerciales.
+            Una metodología práctica combierte más oportunidades en ventas cerradas, fortaleciendo la negociación y la relación con el cliente.
           </h3>
 
           <a
