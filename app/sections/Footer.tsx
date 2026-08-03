@@ -1,3 +1,10 @@
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#030D17] px-6 pb-10 pt-20 text-white lg:px-8">
@@ -94,6 +101,51 @@ export default function Footer() {
                   miguel.gamez@sellingmethodologies.com
                 </p>
               </a>
+              <div className="pt-2">
+  <p className="text-sm text-white/40">Síguelo en redes</p>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+    <a
+      href="https://www.linkedin.com/in/miguelgamezu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn de Miguel Gámez"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C8A96A]/40 text-[#C8A96A] transition duration-300 hover:-translate-y-1 hover:bg-[#C8A96A] hover:text-[#071B2F] hover:shadow-lg"
+    >
+      <FaLinkedinIn size={19} />
+    </a>
+
+    <a
+      href="https://www.facebook.com/miguel.gamez.5366"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook de Miguel Gámez"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C8A96A]/40 text-[#C8A96A] transition duration-300 hover:-translate-y-1 hover:bg-[#C8A96A] hover:text-[#071B2F] hover:shadow-lg"
+    >
+      <FaFacebookF size={18} />
+    </a>
+
+    <a
+      href="https://www.instagram.com/sellingmethodologies?igsh=MTNud2x4NG8xNDE1eg=="
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram de Selling Methodologies"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C8A96A]/40 text-[#C8A96A] transition duration-300 hover:-translate-y-1 hover:bg-[#C8A96A] hover:text-[#071B2F] hover:shadow-lg"
+    >
+      <FaInstagram size={20} />
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@sellingmethodologies?_r=1&_t=ZS-98a2oreLxYq"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="TikTok de Selling Methodologies"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C8A96A]/40 text-[#C8A96A] transition duration-300 hover:-translate-y-1 hover:bg-[#C8A96A] hover:text-[#071B2F] hover:shadow-lg"
+    >
+      <FaTiktok size={19} />
+    </a>
+  </div>
+</div>
             </div>
           </div>
         </div>
