@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/hero.jpg",
+        url: "/images/miguel2.JPG",
         width: 1200,
         height: 630,
         alt: "Miguel Gámez impartiendo una conferencia",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Miguel Gámez | Conferencista Internacional en Ventas",
     description:
       "Conferencias y workshops para potenciar equipos comerciales.",
-    images: ["/images/hero.jpg"],
+    images: ["/images/miguel2.JPG"],
   },
 
   icons: {
